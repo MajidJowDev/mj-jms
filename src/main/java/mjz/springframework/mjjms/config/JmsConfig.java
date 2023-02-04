@@ -9,6 +9,8 @@ import org.springframework.jms.support.converter.MessageType;
 @Configuration
 public class JmsConfig {
 
+    public static final String MY_QUEUE = "my-hello-word-queue"; //  we need to set a queue name
+
     @Bean
     public MessageConverter messageConverter(){
         //when we send a message to JMS, spring convert it to a JMS text message,
