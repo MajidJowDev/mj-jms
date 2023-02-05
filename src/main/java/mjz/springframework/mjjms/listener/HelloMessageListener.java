@@ -15,7 +15,7 @@ import javax.jms.JMSException;
 import javax.jms.Message;
 import java.util.UUID;
 
-@Component
+@Component // we can comment this out if we want to check the message on ActiveMQ console (on docker)
 @RequiredArgsConstructor
 public class HelloMessageListener {
 
